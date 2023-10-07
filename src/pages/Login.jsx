@@ -19,7 +19,7 @@ const Login = () => {
         e.preventDefault();
         dispatch({type: "LOGIN_START"});
         try {
-            const res = await axios.post('https://logsys.onrender.com/api/auth/login',data);
+            const res = await axios.post('https://loginsys-api.onrender.com/api/auth/login',data);
             dispatch({type:"LOGIN_SUCCESS", payload: res.data.user})
             // console.log(navigate)
             navigate(-1)

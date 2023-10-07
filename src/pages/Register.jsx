@@ -19,7 +19,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('https://logsys.onrender.com/api/auth/register',data);
+            const res = await axios.post('https://loginsys-api.onrender.com//api/auth/register',data);
             const message = res.data.message;
             alert(message)
             navigate('/login')
