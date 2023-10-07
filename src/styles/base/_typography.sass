@@ -1,0 +1,74 @@
+.text
+    &-center
+        text-align: center
+    &-left
+        text-align: left
+    &-right 
+        text-align: right
+    //font-weight 
+    &-bolder
+        font-weight: 800
+    &-bold
+        font-weight: 700
+    &-sbold
+        font-weight: 600
+    &-medium
+        font-weight: 500
+    &-regular
+        font-weight: 400
+    &-light
+        font-weight: 300
+    &-primary
+        // color: var(--news-primary-color)
+
+
+h1,h2,h3,h4,h5
+    @extend %bold
+    line-height: 160%
+    @extend %capitalise
+    font-style: normal
+    // color: $text-primary
+h1
+    line-height: 160%
+    font-size: $font-28 
+    +md 
+        font-size: $font-34
+    +lg
+        font-size: $font-48
+
+h2
+    line-height: 160%
+    font-size: $font-24 
+    +md 
+        font-size: $font-32
+    +lg
+        font-size: $font-40
+
+h3
+    font-size: $font-20
+    +md 
+        font-size: $font-28
+    +lg 
+        font-size: $font-32
+
+h4
+    font-size: $font-18 
+    +md 
+        font-size: $font-22
+    +lg 
+        font-size: $font-24
+
+h5
+    font-size: $font-18
+    
+h6
+    font-size: $font-16
+
+h3,h4,h5 
+    margin: 12px 0
+
+
+
+p
+    // color: $text-secondary
+    font-size: $font-16
